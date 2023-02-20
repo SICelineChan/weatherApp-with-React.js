@@ -26,27 +26,28 @@ export default function App() {
     <>
       <div className="topContainer">
         <h2> Hello and welcome to this weather app </h2>
-      </div>
-      <div className="inputBox1">
-        <input
-          className="input"
-          type="text"
-          placeholder="Enter a city"
-          onChange={(e) => setCity(e.target.value)}
-          onKeyDown={getWeather}
-        />
 
-        {typeof weatherInfo.main === "undefined" ? (
-          <div>
-            <p>Please enter in a city to get the weather information!</p>
-          </div>
-        ) : (
-          <div>
-            <p>{weatherInfo.name}</p>
-            <p>{weatherInfo.main.temp} Celsius </p>
-            <p>{weatherInfo.weather[0].main} </p>
-          </div>
-        )}
+        <div className="inputBox1">
+          <input
+            className="input"
+            type="text"
+            placeholder="Enter a city"
+            onChange={(e) => setCity(e.target.value)}
+            onKeyDown={getWeather}
+          />
+
+          {typeof weatherInfo.main === "undefined" ? (
+            <div>
+              <p>Please enter in a city to get the weather information!</p>
+            </div>
+          ) : (
+            <div>
+              <p>{weatherInfo.name}</p>
+              <p>{weatherInfo.main.temp} Celsius </p>
+              <p>{weatherInfo.weather[0].main} </p>
+            </div>
+          )}
+        </div>
       </div>
     </>
   );
