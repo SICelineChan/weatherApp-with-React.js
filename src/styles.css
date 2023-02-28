@@ -15,6 +15,7 @@
   border-radius: 10px;
   font-size: 2rem;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   border: 2px solid grey;
   text-align: center;
 }
