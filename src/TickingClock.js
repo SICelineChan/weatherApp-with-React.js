@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
+
 
 export default function TickingClock() {
   const [clock, setClock] = useState(new Date());
@@ -20,7 +20,7 @@ export default function TickingClock() {
 
   return (
     <div>
-      <h1>Hello, we have two working clocks!</h1>
+      
       <p>This is the time now {timeInText}</p>
       <p>The clock says {clock.toLocaleTimeString()}</p>
     </div>

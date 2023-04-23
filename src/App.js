@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
+import TickingClock from './TickingClock';
+import Footer from './components/Footer';
 
 export default function App() {
   const myApiKey = 'fe9b9d62a21b37d39baab5ed769d8339';
@@ -26,8 +28,10 @@ export default function App() {
     <>
       <div className="main">
         <div className="topContainer">
-          <h2> Hello and welcome to this weather app </h2>
-
+          <h2> Hello and welcome to my weather app </h2>
+          <div>
+            <TickingClock/>
+          </div>
           <div className="inputBox1">
             <input
               className="input"
@@ -50,6 +54,7 @@ export default function App() {
             )}
           </div>
         </div>
+          <Footer />
       </div>
     </>
   );

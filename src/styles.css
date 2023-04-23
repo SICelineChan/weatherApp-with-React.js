@@ -14,7 +14,7 @@
   width: 80%;
   border-radius: 10px;
   font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   border: 2px solid grey;
   text-align: center;
@@ -22,22 +22,22 @@
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   text-align: center;
   color: lightslategrey;
-  -webkit-text-stroke-color: darkorchid;
+  -webkit-text-stroke-color: rgb(63, 4, 92);
   -webkit-text-stroke-width: 1px;
 }
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
 body {
-  background: linear-gradient(90deg, #c49e92, #d4789b, #36bff0, #23d5ab);
+  background: linear-gradient(90deg, #e65124, #d4789b, #36bff0, #0a266e);
   background-size: 400% 400%;
-  animation: smooth 6s ease-in-out infinite;
+  animation: smooth 10s ease-in-out infinite;
   height: 100vh;
 }
 @keyframes smooth {
@@ -50,4 +50,9 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 3% 5% 3%;
 }
