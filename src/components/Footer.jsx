@@ -7,22 +7,46 @@ export default function Footer() {
   return (
     <div className="footer">
       <h5>Copyright Celine S I Chan {year} </h5>
-      <div className="wrapper">
-        <button>
+      <div className="bottom-container"></div>
+      <div
+        className="wrapper"
+        style={{ position: "relative" }}
+        onClick={() => setShowIcons((prev) => !prev)}
+      >
+        <button className="btn">
           <i class="fa-solid fa-link"></i>
         </button>
       </div>
-      <ul>
-        <li>
-          <i class="fa-brands fa-slack"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-github"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-square-steam"></i>
-        </li>
-      </ul>
+      <div className={showIcons ? "show" : "noShow"}>
+        <ul className="list">
+          <li className="item">
+            <i class="fa-brands fa-slack"></i>
+          </li>
+          <li className="item">
+            <i class="fa-brands fa-github"></i>
+          </li>
+          <li className="item">
+            <i class="fa-brands fa-square-steam"></i>
+          </li>
+        </ul>
+      </div>
+      <style>
+        {`
+      .noShow {
+        display: none;
+      }
+      .show {
+        display: flex;
+        position: absolute;
+        right: 10%;
+        width: 10%;
+        height: 20vh;
+        background: none;
+        align-items: center;
+      }
+      
+    `}
+      </style>
     </div>
   );
 }
