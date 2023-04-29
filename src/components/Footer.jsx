@@ -36,13 +36,12 @@ export default function Footer() {
         display: none;
       }
       .show {
-        display: flex;
         position: absolute;
-        right: 10%;
+        right: 25%;
         width: 10%;
         height: 20vh;
         background: none;
-        align-items: center;
+        align-items: start;
       }
       
     `}

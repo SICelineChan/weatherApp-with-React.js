@@ -80,16 +80,17 @@ body {
 }
 .show .btn,
 .btn:hover {
-  outline: 3px solid #0561ee;
+  outline: 3px solid #05ee20;
   outline-offset: -4px;
 }
 .item {
+  font-size: 25px;
   position: relative;
   list-style: none;
-  transition: transform 0.5s;
-  transition-delay: var(--d);
+  /* transition: transform 0.5s;
+  transition-delay: var(--d); */
 }
-.wrapper.show .item:nth-child(1) {
+/* .wrapper.show .item:nth-child(1) {
   transform: translateX(-65px);
 }
 .wrapper.show .item:nth-child(2) {
@@ -118,4 +119,4 @@ body {
 .sc:hover {
   background-color: #fffc00;
   color: inherit;
-}
+} */
