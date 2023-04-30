@@ -66,8 +66,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #fff;
   color: #151515;
   border-radius: 50%;
@@ -85,38 +85,78 @@ body {
 }
 .item {
   font-size: 25px;
-  position: relative;
+  border-radius: 50%;
+  padding-left: 24px;
+  position: absolute;
   list-style: none;
-  /* transition: transform 0.5s;
-  transition-delay: var(--d); */
+  transition: transform 0.5s;
+  transition-delay: var(--d);
 }
-/* .wrapper.show .item:nth-child(1) {
-  transform: translateX(-65px);
+.noShow {
+  display: none;
 }
-.wrapper.show .item:nth-child(2) {
-  transform: translateY(-65px);
+.show {
+  position: relative;
 }
-.wrapper.show .item:nth-child(3) {
-  transform: translateX(65px);
+
+.show .item:nth-child(1) {
+  position: absolute;
+  padding: 5px;
+  right: 1px;
+  bottom: 50%;
+  transform: translateX(55px);
+  background-color: inherit;
+  border-radius: 50%;
 }
+.show .item:nth-child(2) {
+  transform: translateY(-55px);
+  position: absolute;
+  padding: 5px;
+  right: 1px;
+  bottom: 40%;
+  background-color: #bc4ad5;
+  border-radius: 50%;
+  outline: solid 2px #05ee20;
+  outline-offset: -3px;
+}
+.show .item:nth-child(3) {
+  transform: translateX(45px);
+  position: absolute;
+  padding: 5px;
+  right: 35px;
+  bottom: -20%;
+  border-radius: 50%;
+}
+
 .link:hover {
-  color: #fff;
+  color: #ebe9e9;
   transition: background-color 0.5s;
 }
-.ig:hover {
+.instagram:hover {
+  padding: 5px;
+  border-radius: 50%;
   background-image: radial-gradient(
-    circle at 30% 107%,
+    circle at 50% 120%,
     #fdf497 0%,
     #fdf497 5%,
     #fd5949 45%,
     #d6249f 60%,
     #285aeb 90%
   );
+  outline: none;
 }
-.tw:hover {
-  background-color: #1da1f2;
+.steam:hover {
+  padding: 10%;
+  background-image: radial-gradient(
+    circle at 50% 120%,
+    #201054 0%,
+    #2f2868 5%,
+    #63688a 45%,
+    #6045a0 60%,
+    #162658 90%
+  );
+  border-radius: 50%;
 }
-.sc:hover {
-  background-color: #fffc00;
+.github:hover {
   color: inherit;
-} */
+}

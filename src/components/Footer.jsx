@@ -20,32 +20,28 @@ export default function Footer() {
       <div className={showIcons ? "show" : "noShow"}>
         <ul className="list">
           <li className="item">
-            <i class="fa-brands fa-slack"></i>
+            <a
+              href="https://www.instagram.com/breadaboutit/"
+              className="link instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
           <li className="item">
-            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/SICelineChan" className="link github">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </li>
           <li className="item">
-            <i class="fa-brands fa-square-steam"></i>
+            <a
+              href="https://steamcommunity.com/id/sicCeline/"
+              className="link steam"
+            >
+              <i class="fa-brands fa-steam-symbol"></i>
+            </a>
           </li>
         </ul>
       </div>
-      <style>
-        {`
-      .noShow {
-        display: none;
-      }
-      .show {
-        position: absolute;
-        right: 25%;
-        width: 10%;
-        height: 20vh;
-        background: none;
-        align-items: start;
-      }
-      
-    `}
-      </style>
     </div>
   );
 }
