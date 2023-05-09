@@ -83,6 +83,10 @@ body {
   outline: 3px solid #05ee20;
   outline-offset: -4px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .item {
   font-size: 25px;
   border-radius: 50%;
@@ -105,26 +109,26 @@ body {
   right: 1px;
   bottom: 50%;
   transform: translateX(55px);
-  background-color: inherit;
+  background-color: none;
   border-radius: 50%;
 }
 .show .item:nth-child(2) {
-  transform: translateY(-55px);
+  transform: translateY(-65px);
   position: absolute;
   padding: 5px;
   right: 1px;
   bottom: 40%;
-  background-color: #bc4ad5;
+  background-color: #ba9cc1;
   border-radius: 50%;
-  outline: solid 2px #05ee20;
+  outline: solid 2px #cecbe0;
   outline-offset: -3px;
 }
 .show .item:nth-child(3) {
   transform: translateX(45px);
   position: absolute;
   padding: 5px;
-  right: 35px;
-  bottom: -20%;
+  right: 31px;
+  bottom: -10%;
   border-radius: 50%;
 }
 
@@ -146,7 +150,7 @@ body {
   outline: none;
 }
 .steam:hover {
-  padding: 10%;
+  padding: 5px;
   background-image: radial-gradient(
     circle at 50% 120%,
     #201054 0%,
@@ -158,5 +162,5 @@ body {
   border-radius: 50%;
 }
 .github:hover {
-  color: inherit;
+  color: #6045a0;
 }
