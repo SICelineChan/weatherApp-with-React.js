@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
-import TickingClock from './TickingClock';
+import TickingClock from './components/TickingClock';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
     <>
       <div className="main">
         <div className="topContainer">
-          <h2> Hello and welcome to my weather app </h2>
+          <h2> Hello and welcome to this weather app </h2>
           <div>
             <TickingClock/>
           </div>
@@ -50,7 +50,18 @@ export default function App() {
                 <p>{weatherInfo.name}</p>
                 <p>{weatherInfo.main.temp}&deg;C (Celsius) </p>
                 <p>{weatherInfo.weather[0].main} </p>
+              <div className='icon-Container'>
+               { 
+                  weatherInfo.weather[0].main ==="Clouds" ? <img src='https://openweathermap.org/img/wn/03d@2x.png' alt="Clouds"/>
+                : weatherInfo.weather[0].main ==="Clear" ? <img src='https://openweathermap.org/img/wn/01d@2x.png' alt="Clear Sky"/>
+                : weatherInfo.weather[0].main ==="Rain" ? <img src='https://openweathermap.org/img/wn/09d@2x.png' alt="Rain"/>
+                : <p>{weatherInfo.weather[0].main}</p>
+               }
               </div>
+
+
+              </div>
+              
             )}
           </div>
         </div>

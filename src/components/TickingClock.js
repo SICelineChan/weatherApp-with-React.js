@@ -21,7 +21,7 @@ export default function TickingClock() {
   return (
     <div>
       
-      <p>This is the time now {timeInText}</p>
+      <p>Time at your current location {timeInText}</p>
       <p>The clock says {clock.toLocaleTimeString()}</p>
     </div>
   );

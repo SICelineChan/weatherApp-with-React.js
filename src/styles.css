@@ -1,5 +1,21 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #e7e0e0;
+  background-image: url(../public/backgrdPic.jpg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .main {
-  margin: 20% 10% 15%;
+  margin: 8% 10% 15%;
 }
 .topcontainer {
   padding: 5px;
@@ -27,21 +43,21 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.8rem;
   text-align: center;
-  color: lightslategrey;
+  color: rgb(189, 190, 191);
   -webkit-text-stroke-color: rgb(63, 4, 92);
   -webkit-text-stroke-width: 1px;
 }
 p {
+  color: #f1efef;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
-body {
+/*body {
   background: linear-gradient(90deg, #e65124, #d4789b, #36bff0, #0a266e);
   background-size: 400% 400%;
-  animation: smooth 10s ease-in-out infinite;
-  height: 100vh;
+  animation: smooth 10s ease-in-out infinite; 
 }
 @keyframes smooth {
   0% {
@@ -53,8 +69,9 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
-.footer {
+} */
+.footer,
+.icon-container {
   display: flex;
   justify-content: center;
   margin: 3% 5% 3%;
@@ -90,7 +107,7 @@ a {
 .item {
   font-size: 25px;
   border-radius: 50%;
-  padding-left: 24px;
+  padding: 25px;
   position: absolute;
   list-style: none;
   transition: transform 0.5s;
@@ -102,7 +119,6 @@ a {
 .show {
   position: relative;
 }
-
 .show .item:nth-child(1) {
   position: absolute;
   padding: 5px;
@@ -118,10 +134,6 @@ a {
   padding: 5px;
   right: 1px;
   bottom: 40%;
-  background-color: #ba9cc1;
-  border-radius: 50%;
-  outline: solid 2px #cecbe0;
-  outline-offset: -3px;
 }
 .show .item:nth-child(3) {
   transform: translateX(45px);
@@ -137,7 +149,8 @@ a {
   transition: background-color 0.5s;
 }
 .instagram:hover {
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 50%;
   background-image: radial-gradient(
     circle at 50% 120%,
@@ -147,12 +160,13 @@ a {
     #d6249f 60%,
     #285aeb 90%
   );
-  outline: none;
+  outline: white solid 1px;
 }
 .steam:hover {
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-image: radial-gradient(
-    circle at 50% 120%,
+    circle at 50% 90%,
     #201054 0%,
     #2f2868 5%,
     #63688a 45%,
@@ -162,5 +176,9 @@ a {
   border-radius: 50%;
 }
 .github:hover {
-  color: #6045a0;
+  color: #221f2a;
+  background-color: #ebe9e9;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
